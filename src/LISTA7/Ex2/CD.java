@@ -5,9 +5,9 @@ public class CD {
     private Integer faixaAtual;
     private String estado;
     public CD(){}
-    public CD(Integer numMusicasCD,Integer faixaAtual,String estado){
+    public CD(Integer numMusicasCD,String estado){
         this.numMusicasCD = numMusicasCD;
-        this.faixaAtual = faixaAtual;
+        this.faixaAtual = 1;
         this.estado = estado;
     }
 

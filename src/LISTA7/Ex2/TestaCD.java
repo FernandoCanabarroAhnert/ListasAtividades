@@ -7,7 +7,7 @@ public class TestaCD {
         Scanner ler = new Scanner(System.in);
         System.out.println("Digite a quantidade de músicas do cd: ");
         int numMusicasCD = ler.nextInt();
-        CD cd = new CD(numMusicasCD,1,null);
+        CD cd = new CD(numMusicasCD,null);
         System.out.println("==== MENU ====");
         System.out.println("1 para PLAY");
         System.out.println("2 para PAUSE");

@@ -60,7 +60,7 @@ public class Desafio {
         //o método recebe uma matriz de inteiros e imprime a mesma;
         for (int i = 0; i < matriz.length; i++) {
             for (int j = 0; j < matriz[i].length; j++) {
-                System.out.print(matriz[i][j] + " ");
+                System.out.printf("%3d",matriz[i][j]);
             }
             System.out.println();
         }
@@ -160,5 +160,7 @@ public class Desafio {
             System.out.printf(" %.1f |",matriz[i][i] * mediaDiagSecundaria);
         }
         System.out.println();
+
+
     }
 }
