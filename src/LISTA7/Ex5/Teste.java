@@ -24,11 +24,9 @@ public class Teste {
             lista.add(new ItemNotaFiscal(descricao,valorUnid,quantidade,aliquota));
             System.out.println("---------------------------------------");
         }
+        NotaFiscal notaFiscal = new NotaFiscal(lista);
         System.out.println("===========================");
-        for (int i = 0; i < n; i++) {
-            System.out.println("ITEM " + (i + 1) + ":");
-            System.out.println(lista.get(i));
-            System.out.println("---------------------------------");
-        }
+        notaFiscal.mostrar();
+        System.out.println("Soma total dos valores = R$" + String.format("%.2f",notaFiscal.calculaTotal()));
     }
 }

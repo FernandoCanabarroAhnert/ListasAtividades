@@ -5,10 +5,10 @@ public class CD {
     private Integer faixaAtual;
     private String estado;
     public CD(){}
-    public CD(Integer numMusicasCD,String estado){
+    public CD(Integer numMusicasCD){
         this.numMusicasCD = numMusicasCD;
         this.faixaAtual = 1;
-        this.estado = estado;
+        this.estado = "Estado: tocando";
     }
 
     public Integer getNumMusicasCD() {

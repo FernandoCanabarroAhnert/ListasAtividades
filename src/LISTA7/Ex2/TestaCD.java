@@ -7,7 +7,7 @@ public class TestaCD {
         Scanner ler = new Scanner(System.in);
         System.out.println("Digite a quantidade de músicas do cd: ");
         int numMusicasCD = ler.nextInt();
-        CD cd = new CD(numMusicasCD,null);
+        CD cd = new CD(numMusicasCD);
         System.out.println("==== MENU ====");
         System.out.println("1 para PLAY");
         System.out.println("2 para PAUSE");
@@ -16,7 +16,7 @@ public class TestaCD {
         System.out.println("5 para ir para a FAIXA ANTERIOR");
         int op;
         do {
-            System.out.println("Digite uma opção: ");
+            System.out.println("Digite uma opção ou -1 para encerrar o programa: ");
             op = ler.nextInt();
             switch (op){
                 case 1:
