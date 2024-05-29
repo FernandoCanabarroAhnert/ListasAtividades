@@ -30,6 +30,9 @@ public class Cofrinho {
         if (this.calcularTotal() < moeda.getValor()){
             System.out.println("Impossível retirar moeda! Total insuficiente...");
         }
+        else if(!moedas.contains(moeda)){
+            System.out.println("Esta moeda não está dentro do cofrinho!");
+        }
         else {
             moedas.remove(moeda);
         }
