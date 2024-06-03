@@ -3,8 +3,8 @@ package LISTA8.Ex1;
 public class Gerente extends Funcionario{
 
     private String departamento;
-    public Gerente(String nome, String cpf,String departamento) {
-        super(nome, cpf);
+    public Gerente(String nome, String cpf,double salario,String departamento) {
+        super(nome, cpf,salario);
         this.setSalario(this.getSalario() * 1.2);
         this.departamento = departamento;
     }

@@ -8,10 +8,10 @@ public class Funcionario {
 
     private Double salario;
 
-    public Funcionario(String nome,String cpf){
+    public Funcionario(String nome,String cpf,double salario){
         this.nome = nome;
         this.cpf = cpf;
-        this.salario = 3500.00;
+        this.salario = salario;
     }
 
     public String getNome() {

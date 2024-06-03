@@ -6,14 +6,17 @@ public class Teste {
     public static void main(String[] args) {
         Scanner ler = new Scanner(System.in);
         Funcionario[] funcionarios = new Funcionario[2];
+        System.out.print("Entre com o valor do salário base: ");
+        double salario = ler.nextDouble();
         System.out.println("Entre com os dados dos dois funcionários: ");
+        ler.nextLine();
         for (int i = 0; i < funcionarios.length; i++) {
             System.out.println("Funcionário #" + (i + 1) + ": ");
             System.out.print("Nome: ");
             String nome = ler.nextLine();
             System.out.print("CPF: ");
             String cpf = ler.nextLine();
-            funcionarios[i] = new Funcionario(nome, cpf);
+            funcionarios[i] = new Funcionario(nome, cpf,salario);
             System.out.println("--------------------------------");
         }
         System.out.println("Entre com os dados do gerente:");
@@ -23,7 +26,7 @@ public class Teste {
         String cpf = ler.nextLine();
         System.out.print("Departamento: ");
         String departamento = ler.nextLine();
-        Gerente gerente = new Gerente(nome, cpf, departamento);
+        Gerente gerente = new Gerente(nome, cpf, salario,departamento);
         System.out.println("========================");
         System.out.println("Dados dos funcionários da empresa...");
         System.out.println("Funcionários:");
